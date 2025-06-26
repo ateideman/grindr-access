@@ -58,7 +58,7 @@ class GrindrUser:
 
             if response["code"] == 27:
                 self.banned = True
-                raise Exception(f'Banned for {response['reason']}')
+                raise Exception(f"Banned for {response['reason']}")
 
             if response["code"] == 28:
                 self.banned = True
